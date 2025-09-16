@@ -48,3 +48,11 @@ Now, let's set up the Uvicorn server at _localhost:8000_ (or some other availabe
 ```bash
 uvicorn main:app --reload --port 8000
 ```
+
+Now you can login, sign up, create posts, schedule them etc. To run the scheduler, open a separate terminal and run:
+
+```bash
+python scheduler.py
+```
+
+This script will watch out for upcoming scheduled posts
